@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{padding: 0; margin: 0; box-sizing: border-box; background-size: cover; scroll-behavior: smooth; font-family:  'PT Sans', sans-serif; transition: 0.3s}
+:root{
+    --c1: #093841;
+    --c2: orangered;
+    --c3: #eef;
+    --c4: #1b1b1b;
+    --c5: grey;
+    --c6: #03404d;
+    --c7: #c9000011;
+    scrollbar-width: thin !important;
+}
+*{scrollbar-width: thin !important;}
+*::-webkit-scrollbar{width: 10px;}
+*::-webkit-scrollbar-thumb{width: 10px; background-color: var(--c3); border-radius: 3px; opacity: .5;}
+*::-webkit-scrollbar-thumb:hover{opacity: 1}
+a:hover{cursor:pointer;}
+
+.bg0{background-color: var(--c6);}
+.bg01{background-color: #000000dd;}
+.dflex{display: flex;}
+.dfdc{flex-direction: column;}
+.djcc{justify-content: center;}
+.dalc{align-items: center;}
+.djcsa{justify-content: space-around;}
+.djcsb{justify-content: space-between;}
+.dwrap{flex-wrap: wrap;}
+.dwrapr{flex-wrap: wrap-reverse;}
+
+  html, body{
+    overflow-x: hidden;
+
+  }
+  body {
+    background-color: var(--c1) !important;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 200;
+    width: 100%;
+    background-color: var(--c1);
+    box-shadow: 0px 0px 10px #000;
+  }
+  .blue {
+    color: var(--c3);
+    margin-left: 50px;
+    font-style: italic;
+  }
+  .orange {
+    font-style: italic;
+    color: var(--c2);
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  .nav__link {
+    position: fixed;
+    width: 100%;
+    top: 58px;
+    transform: translateX(200vw);
+    transition: transform 1000ms ease-in-out;
+    margin-right: 120px!important;
+    font-size: 1.3rem;
+    background-color: var(--c1); 
+  }
+  .nav__link a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav__link a:hover {
+    color: white;
+  }
+  .nav__link.hide{
+    transform: translateX(0px);
+    transition: transform 1000ms ease-in-out;
+  }
+  .nav__link a {
+    display: block;
+    padding: 10px 0 10px 20px;
+  }
+  #twit {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    font-size: 30px;
+    color: var(--c2);
+    background-color: var(--c3);
+    padding: 5px;
+    border-radius: 45px;
+    z-index: 100;
+  }
+  .row-bg-color {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px #000;
+  }
+  .first-section {
+    background-color: var(--c1);
+
+  }
+  #myPic {
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #000000cc;
+  }
+  .hello p {
+    margin-top: 20px;
+    color: var(--c5);
+    font-weight: 500;
+  }
+  .myName h5 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .junior p {
+    font-weight: 500;
+    color: var(--c2);
+  }
+  #icons {
+    padding-right: 30px;
+  }
+  .iconsItem {
+    color: var(--c5);
+  }
+  .iconDiv {
+    margin-bottom: 5px;
+  }
+  .hireContact {
+    margin-top: 20px;
+  }
+  .hireMe {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px solid var(--c2);
+    border-radius: 45px;
+    color: var(--c2);
+    box-shadow: 0px 0px 5px #000;
+  }
+  .contactMe {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px solid var(--c2);
+    border-radius: 45px;
+    color: var(--c2);
+    box-shadow: 0px 0px 5px #000;
+  }
+  .socialMedia {
+    margin-top: 30px;
+  }
+  #icons2 {
+    font-size: 30px;
+    padding: 5px;
+    color: var(--c1);
+    border-radius: 4px;
+  }
+  .secondSection {
+    padding-top: 5%;
+    padding-bottom: 20px;
+  }
+  .level h4 {
+    color: var(--c5);
+  }
+  .aboutMe {
+    color: var(--c3);
+    position: relative;
+    font-weight: bold;
+  }
+  .aboutMe::after {
+    content: '';
+    position: absolute;
+    background-color: var(--c3);
+    border-radius: 20px;
+    height: 3.5px;
+    width: 10%;
+    top: 100%;
+    right: 90%;
+  }
+  .aboutMeText {
+    color: var(--c3);
+  }
+  .skillDiv h4 {
+    color: var(--c3);
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  .html5 h5 {
+    color: var(--c3);
+    margin-top: 40px;
+  }
+  .css h5 {
+    color: var(--c3);
+    margin-top: 30px;
+  }
+  .boostrap h5 {
+    color: var(--c3);
+    margin-top: 30px;
+  }
+  .javascript {
+    color: var(--c3);
+    margin-top: 30px;
+  }
+  .myEducation {
+    color: var(--c3);
+    position: relative;
+    font-weight: bold;
+  }
+  .myEducation::after {
+    content: '';
+    position: absolute;
+    background-color: var(--c3);
+    border-radius: 20px;
+    height: 3.5px;
+    width: 10%;
+    top: 100%;
+    right: 90%;
+  }
+  .education {
+  background-color: var(--c3);
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px #000;
+  border-radius: 10px;
+  }
+  .education p {
+    color: var(--c5);
+  }
+  .degree {
+    color: var(--c4);
+    font-weight:500;
+  }
+  .gpa {
+    color: var(--c4);
+    font-weight:500;
+  }
+  .course {
+    margin-top: 20px;
+  }
+  .course h6 {
+    color: var(--c2);
+    font-weight:600;
+  }
+  .cvDiv {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .downloadCv {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px solid var(--c2);
+    border-radius: 45px;
+    color: var(--c2);
+    box-shadow: 0px 0px 5px #000;
+  }
+
+
+  
+  
+  
+  
+
+
+
+  @media screen and (min-width: 830px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+      transform: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+      text-align: start;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .footerContent {
+      font-size: small;
+    }
+  }
